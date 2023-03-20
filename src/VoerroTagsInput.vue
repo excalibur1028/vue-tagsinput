@@ -468,11 +468,8 @@ export default {
         tagFromSearch(tag) {
             this.clearSearchResults();
             this.addTag(tag);
-
-            this.$nextTick(() => {
-                this.input = '';
-                this.oldInput = '';
-            });
+            this.input = '';
+            this.oldInput = '';
         },
 
         /**
